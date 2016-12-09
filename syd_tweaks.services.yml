@@ -1,0 +1,6 @@
+services:
+  syd_tweaks.twig.images:
+    #arguments: ['@renderer']
+    class: Drupal\syd_tweaks\TwigExtension\Images
+    tags:
+      - { name: twig.extension }
