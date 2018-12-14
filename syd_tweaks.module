@@ -10,17 +10,3 @@ function syd_tweaks_form_alter(&$form, &$form_state, $form_id) {
 	  $form['keys']['#attributes']['placeholder'] = t('Search...');
   }
 }
-
-/**
- * Implements hook_theme().
- * 
- * Set theme tempalte for 'Emergency message' block
- */
-function emergency_message() {
-  return array(
-    'emergency_message' => array(
-      'variables' => array('title' => NULL, 'description' => NULL),
-      'template' => 'block--emergency_message',
-    ),
-  );
-}
