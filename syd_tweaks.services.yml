@@ -4,3 +4,8 @@ services:
     class: Drupal\syd_tweaks\TwigExtension\Images
     tags:
       - { name: twig.extension }
+  syd_tweaks.twig.icon:
+    #arguments: ['@renderer']
+    class: Drupal\syd_tweaks\TwigExtension\Icon
+    tags:
+      - { name: twig.extension }
